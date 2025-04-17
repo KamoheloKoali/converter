@@ -210,7 +210,7 @@ export default function Index() {
         className="absolute w-full h-72 z-0 "
         resizeMode="cover"
       />
-    <ScrollView className="flex-1  p-4">
+    <ScrollView className="flex-1  p-4" showsVerticalScrollIndicator={false}>
       <Text className="text-3xl font-bold mt-32 text-center p-2">File Converter</Text>
       <Text className="text-center flex gap-14 mb-6 items-center">
         <Text className="flex gap-2 justify-center items-center">

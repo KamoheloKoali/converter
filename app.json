@@ -15,7 +15,8 @@
       "backgroundColor": "#f0f9ff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kamohelokoali.converter"
     },
     "android": {
       "adaptiveIcon": {
