@@ -4,38 +4,53 @@
     "slug": "converter",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/ic_launcher.png",
+    "icon": "./assets/images/enhanced-icon-quality.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "backgroundColor": "#f0f9ff",
+    "splash": {
+      "image": "./assets/images/enhanced-icon-quality.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f0f9ff"
+    },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/ic_launcher.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage": "./assets/images/enhanced-icon-quality.png",
+        "backgroundColor": "#f0f9ff"
+      },
+      "package": "com.kamohelokoali.converter"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/fic_launcher.png"
+      "favicon": "./assets/images/enhanced-icon-quality.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/ic_launcher.png",
+          "image": "./assets/images/enhanced-icon-quality.png",
           "imageWidth": 200,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff"
+          "backgroundColor": "#f0f9ff"
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "6fa36b1b-1c7b-42fd-852b-1e5473a59c03"
+      }
     }
   }
 }

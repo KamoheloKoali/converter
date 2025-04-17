@@ -14,7 +14,7 @@ import {
 import * as DocumentPicker from "expo-document-picker";
 import * as FileSystem from "expo-file-system";
 import * as MediaLibrary from "expo-media-library";
-import icon from "@/assets/images/ic_launcher.png";
+import icon from "@/assets/images/enhanced-icon-quality.png";
 import wordToPdf from "@/assets/images/wordtopdf.png";
 import excelToPdf from "@/assets/images/exceltopdf.jpeg";
 import pdfToWord from "@/assets/images/pdftoword.png";
@@ -204,20 +204,21 @@ export default function Index() {
   };
 
   return (
-    <ScrollView className="flex-1 bg-sky-50 p-4">
+    <View className="w-full h-screen bg-sky-50">
       <Image
         source={icon as ImageSourcePropType}
-        className="w-24 h-24 self-center mb-4"
-        resizeMode="contain"
+        className="absolute w-full h-72 z-0 "
+        resizeMode="cover"
       />
-      <Text className="text-3xl font-bold text-center p-2">File Converter</Text>
-      <Text className="text-center  flex gap-14 mb-6 justify-evenly items-center">
+    <ScrollView className="flex-1  p-4">
+      <Text className="text-3xl font-bold mt-32 text-center p-2">File Converter</Text>
+      <Text className="text-center flex gap-14 mb-6 items-center">
         <Text className="flex gap-2 justify-center items-center">
           <Text className="text-center">
-            <Info color={"grey"} size={13} className=" " />{" "}
+            <Info color={"gray"} size={13} className=" " />{" "}
           </Text>
-          <Text className="font-bold">Max file size:</Text>
-          <Text className="text-gray-500/70"> (3.5 MB)</Text>
+          <Text className="font-bold ">Max file size:</Text>
+          <Text className="text-red-500/70"> (3.5 MB)</Text>
         </Text>
       </Text>
 
@@ -281,5 +282,6 @@ export default function Index() {
         </View>
       ))}
     </ScrollView>
+    </View>
   );
 }
